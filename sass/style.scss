@@ -27,34 +27,35 @@ body {
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .intro {
-    height: 77vh;
+    height: 750px;
     background-image: url("../img/intro-bg.png");
     background-size: cover;
     background-position: center;
     color: #ffffff;
     padding-top: 38px;
-    .intro__navigation {
+    .navigation {
         margin: 0 auto;
         width: 1170px;
         height: 24px;
         display: flex;
         margin-bottom: 194px;
         align-items: center;
-        .intro__logo {
+        .logo {
             margin-right: 392px;
         }
-        .intro__links {
+        .links {
             font-size: 13px;
             text-transform: uppercase;
-            .intro__navigation-link {
+            .navigation-link {
                 font-family: 'Raleway', sans-serif;
                 color: #ffffff;
                 font-weight: bold;
             }
-            .intro__navigation-link:not(:last-child) {
+            .navigation-link:not(:last-child) {
                 margin-right: 59px;
             }
         }
@@ -77,5 +78,75 @@ body {
         .intro__button {
             margin-top: 77px;
         }
+    }
+}
+
+.container .row:not(:last-child) {
+    margin-bottom: 74px;
+}
+
+.services {
+    height: 692px;
+    .container {
+        margin-top: 125px;
+        .row {
+            text-align: center;
+            img {
+                margin-bottom: 34px;
+            }
+            .title {
+                text-transform: uppercase;
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+                font-size: 14px; 
+            }
+            .description {
+                color: #666666;
+                line-height: 25px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                margin-top: 26px;
+            }
+        }
+    }
+}
+
+.pictures {
+    height: 703px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .work {
+        width: 473px;
+        height: 350px;
+        position: relative;
+        cursor: pointer;
+        .picture-link {
+            .picture {
+                width: 473px;
+                height: 350px;
+            }
+        }
+    }
+    .work:after {
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.3;
+    }
+    .work:after:hover {
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.3;
+        background-color: red;
     }
 }

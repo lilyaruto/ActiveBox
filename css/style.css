@@ -22,32 +22,33 @@ body {
   font-size: 13px;
   border: none;
   border-radius: 3px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .intro {
-  height: 77vh;
+  height: 750px;
   background-image: url("../img/intro-bg.png");
   background-size: cover;
   background-position: center;
   color: #ffffff;
   padding-top: 38px; }
-  .intro .intro__navigation {
+  .intro .navigation {
     margin: 0 auto;
     width: 1170px;
     height: 24px;
     display: flex;
     margin-bottom: 194px;
     align-items: center; }
-    .intro .intro__navigation .intro__logo {
+    .intro .navigation .logo {
       margin-right: 392px; }
-    .intro .intro__navigation .intro__links {
+    .intro .navigation .links {
       font-size: 13px;
       text-transform: uppercase; }
-      .intro .intro__navigation .intro__links .intro__navigation-link {
+      .intro .navigation .links .navigation-link {
         font-family: 'Raleway', sans-serif;
         color: #ffffff;
         font-weight: bold; }
-      .intro .intro__navigation .intro__links .intro__navigation-link:not(:last-child) {
+      .intro .navigation .links .navigation-link:not(:last-child) {
         margin-right: 59px; }
   .intro .intro__main {
     text-align: center;
@@ -64,5 +65,61 @@ body {
       line-height: 30px; }
     .intro .intro__main .intro__button {
       margin-top: 77px; }
+
+.container .row:not(:last-child) {
+  margin-bottom: 74px; }
+
+.services {
+  height: 692px; }
+  .services .container {
+    margin-top: 125px; }
+    .services .container .row {
+      text-align: center; }
+      .services .container .row img {
+        margin-bottom: 34px; }
+      .services .container .row .title {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-size: 14px; }
+      .services .container .row .description {
+        color: #666666;
+        line-height: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 26px; }
+
+.pictures {
+  height: 703px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .pictures .work {
+    width: 473px;
+    height: 350px;
+    position: relative;
+    cursor: pointer; }
+    .pictures .work .picture-link .picture {
+      width: 473px;
+      height: 350px; }
+  .pictures .work:after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.3; }
+  .pictures .work:after:hover {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.3;
+    background-color: red; }
 
 /*# sourceMappingURL=style.css.map */
